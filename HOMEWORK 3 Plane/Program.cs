@@ -57,7 +57,7 @@ namespace HOMEWORK_3_Plane
             Console.WriteLine("Total freight plane carrying: {0}", totalPlaneVolume + " m3\n");
 
 
-            //сортировка по дальности
+            //сортировка по дальности через объединение коллекций
             var passangerPlanesForSort = passangerPlanes.Select(x => new
             {
                 Name = x.Name,
@@ -80,6 +80,23 @@ namespace HOMEWORK_3_Plane
             foreach (var plane in sorted)
             {
                 Console.WriteLine($"{plane.Name} - {plane.RangeOfFlight} km");
+            }
+
+            //сортировка по дальности с помощью IComparable            
+            Console.WriteLine("\nSorting of passanger planes by flight range:");
+            Array.Sort(passangerPlanes.ToArray());
+
+            foreach (var passangerPlane in passangerPlanes)
+            {
+                Console.WriteLine($"{passangerPlane.Name} - {passangerPlane.RangeOfFlight}");
+            }
+
+            Console.WriteLine("\nSorting of freight planes by flight range:");
+            Array.Sort(freightPlanes.ToArray());
+
+            foreach (var freightPlane in freightPlanes)
+            {
+                Console.WriteLine($"{freightPlane.Name} - {freightPlane.RangeOfFlight}");
             }
 
             //найти самолет с диапазоном параметров потребления горючего 
