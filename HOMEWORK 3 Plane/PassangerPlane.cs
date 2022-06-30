@@ -19,5 +19,12 @@ namespace HOMEWORK_3_Plane
             
             return (int)(RangeOfFlight - passangerPlane.RangeOfFlight);
         }
+
+        public override void PrintInfo()
+        {
+            Console.WriteLine($"Name: {Name} - Type of plane {Type} - Carrying: {Carrying} tons" +
+                $"Range of flight: {RangeOfFlight} km - \nFuel consumption: {FuelConsumption} kg / h - " +
+                $"Capacity: {Capacity} people\n");
+        }
     }
 }

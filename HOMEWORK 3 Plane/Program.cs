@@ -23,7 +23,7 @@ namespace HOMEWORK_3_Plane
                                   $"Capacity: {passangerPlane.Capacity} people\n"); ;                
             }
 
-            List<FreightPlane> freightPlanes = GetFreightPlane();
+            List<FreightPlane> freightPlanes = GetFreightPlane();                      
 
             foreach (var freightPlane in freightPlanes)
             {
@@ -35,9 +35,29 @@ namespace HOMEWORK_3_Plane
                                   $"FreightVolume: {freightPlane.FreightVolume} m3\n");
             }
 
+            // вывод инфо через метод
+            Console.WriteLine("-------------------------------------------------------------------------------------");
+            Console.WriteLine("Print Info about passanger planes:\n");
+            
+            foreach (var passangerPlane in passangerPlanes)
+            {
+                passangerPlane.PrintInfo();
+            }
+
+            Console.WriteLine("-------------------------------------------------------------------------------------");
+            Console.WriteLine("Print Info about freight planes:\n");
+
+            foreach (var freightPlane in freightPlanes)
+            {
+                freightPlane.PrintInfo();
+            }
+            
+            Console.WriteLine("-------------------------------------------------------------------------------------\n");
+
+
             AirCompany airCompany = new AirCompany(passangerPlanes, freightPlanes);
            
-            Console.WriteLine("Total number of planes in aircompany: {0} planes.\n", airCompany.PassangerPlanes.Count + 
+            Console.WriteLine("Total number of planes in aircompany: {0} planes.", airCompany.PassangerPlanes.Count + 
                 airCompany.FreightPlanes.Count);
 
             double totalPlaneCapacity = 0, totalPlaneCarrying = 0, totalPlaneVolume = 0;

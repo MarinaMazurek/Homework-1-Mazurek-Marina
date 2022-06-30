@@ -20,5 +20,7 @@ namespace HOMEWORK_3_Plane
             RangeOfFlight = rangeOfFlight;
             FuelConsumption = fuelConsumption;
         }
+
+        public abstract void PrintInfo();
     }
 }
