@@ -7,56 +7,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace HomeWork_4
-{
-    public static class Path
-    {
-        public const string fileToRead = @"F:\1 С #\IT ACADEMIA\sample.txt";
-        public const string fileToWriteSentenses = @"F:\1 С #\IT ACADEMIA\sampleWriteSentences.txt";
-        public const string fileToWriteWords = @"F:\1 С #\IT ACADEMIA\sampleWriteWords.txt";
-        public const string fileToPunctuation = @"F:\1 С #\IT ACADEMIA\sampleWritePunctuation.txt";
-        public const string fileOfWordsInAlphabeticalOrder = @"F:\1 С #\IT ACADEMIA\sampleWriteWordsInAlphabeticalOrder.txt";
-        public const string fileForTheMost = @"F:\1 С #\IT ACADEMIA\sampleWriteTheMost.txt";
-    }
-
-    public static class FileWorker
-    {
-        public static string ReadFromFileToString(string path)
-        {
-            var text = string.Empty;
-
-            using (StreamReader sr = File.OpenText(path))
-            {
-                text = sr.ReadToEnd();
-            }
-
-            return text;
-        }
-
-        public static void WriteStringListToFile(string path, List<string> elements)
-        {
-            using (StreamWriter writer = new StreamWriter(path, false))
-            {
-                foreach (var item in elements)
-                {
-                    writer.WriteLine(item);
-                }
-                Console.WriteLine($"Data was written to the file \"{path}\".\n");  // указать файл
-            }
-        }
-
-        public static void WriteDictionaryToFile(string path, Dictionary<string, int> elements)
-        {
-            using (StreamWriter writer = new StreamWriter(path, false))
-            {
-                foreach (var item in elements)
-                {
-                    writer.WriteLine(item);
-                }
-                Console.WriteLine($"Data was written to the file \"{path}\".\n");  // указать файл
-            }
-        }
-    }
-
+{    
     class Program
     {
         static async Task Main(string[] args)
