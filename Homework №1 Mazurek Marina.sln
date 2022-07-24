@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HOMEWORK 2", "HOMEWORK 2\HO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HOMEWORK 3 Plane", "HOMEWORK 3 Plane\HOMEWORK 3 Plane.csproj", "{CE89AA14-ACAA-4766-9636-F7E4707C6061}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork 4", "HomeWork 4\HomeWork 4.csproj", "{CF1706FB-26E5-48CD-B2FF-4AD2CE6FD90D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork 4", "HomeWork 4\HomeWork 4.csproj", "{CF1706FB-26E5-48CD-B2FF-4AD2CE6FD90D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HOMEWORK 5 Telephones", "HOMEWORK 5 Telephones\HOMEWORK 5 Telephones.csproj", "{901A3272-91B7-42D0-870C-1E0CDA0B2796}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{CF1706FB-26E5-48CD-B2FF-4AD2CE6FD90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF1706FB-26E5-48CD-B2FF-4AD2CE6FD90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF1706FB-26E5-48CD-B2FF-4AD2CE6FD90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{901A3272-91B7-42D0-870C-1E0CDA0B2796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{901A3272-91B7-42D0-870C-1E0CDA0B2796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{901A3272-91B7-42D0-870C-1E0CDA0B2796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{901A3272-91B7-42D0-870C-1E0CDA0B2796}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
