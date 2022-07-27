@@ -18,7 +18,6 @@ namespace Homework_6_Gardeners
             Console.WriteLine("Enter width of area:");
             var isWidth = int.TryParse(Console.ReadLine(), out _width);
 
-
             _area = new int[_length, _width];
 
             Thread gardener1 = new Thread(StepGardener1);
